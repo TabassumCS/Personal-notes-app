@@ -2,10 +2,10 @@
 from flask_sqlalchemy import SQLAlchemy
 
 # Initialize the SQLAlchemy object
-db = SQLAlchemy
+db = SQLAlchemy()
 
 #define the User model class to represent users in the database
-class User(db.Mode):
+class User(db.Model):
     #Define the primary key column for the user
     id = db.Column(db.Integer, primary_key=True)
     
